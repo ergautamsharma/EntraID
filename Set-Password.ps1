@@ -22,7 +22,7 @@
 .NOTES
   Version:             1.1
   Author:              Gautam Sharma @ergautamsharma
-  Source:              https://github.com/ergautamsharma
+  Source:              https://github.com/ergautamsharma/EntraID
   Creation Date:       March 04, 2023
   Last Update Date:    March 19, 2023
 
