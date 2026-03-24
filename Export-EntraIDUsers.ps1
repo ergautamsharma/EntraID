@@ -44,10 +44,10 @@ foreach ($useri in $allAzureADUser)
 
 
     }
-    #$Alluserhash.GetEnumerator() | Export-Csv -Path C:\Temp\PepsiCo\WS1User-Intune\AzureADUSER.csv -NoTypeInformation -Append
+    #$Alluserhash.GetEnumerator() | Export-Csv -Path C:\Temp\AzureADUSER.csv -NoTypeInformation -Append
     $AzureADExport = New-Object PSObject -Property $Alluserhash
-    #$AzureADExport | Select-Object UserPrincipalName, employeeId, DistinguishedName, Mail, DisplayName, AccountEnabled | Export-Csv -Path "C:\Temp\PepsiCo\WS1User-Intune\Sept-06-23\Sept-19AzureADUser-Export.csv" -NoTypeInformation -Append
-    $AzureADExport | Select-Object UserPrincipalName, employeeId, MailNickName, Mail, DisplayName, AccountEnabled, City, CompanyName, Country, PhysicalDeliveryOfficeName | Export-Csv -Path ".\Downloads\GPID.csv" -NoTypeInformation -Append
+    #$AzureADExport | Select-Object UserPrincipalName, employeeId, DistinguishedName, Mail, DisplayName, AccountEnabled | Export-Csv -Path "C:\Temp\AzureADUser-Export.csv" -NoTypeInformation -Append
+    $AzureADExport | Select-Object UserPrincipalName, employeeId, MailNickName, Mail, DisplayName, AccountEnabled, City, CompanyName, Country, PhysicalDeliveryOfficeName | Export-Csv -Path ".\Downloads\AzureADUser-Export.csv" -NoTypeInformation -Append
     $CurrentItem++
     $PercentComplete = [int](($CurrentItem / $TotalItems) * 100)
 }
